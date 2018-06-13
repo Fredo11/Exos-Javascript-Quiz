@@ -9,17 +9,28 @@ function onYouTubeIframeAPIReady() {
         endSeconds: 25,
         playerVars: {
             color: 'white',
-            playlist: '',
             autoplay: 1,
+            autohide: 1,
+            controls: 0,
+            rel: 0,
+            showinfo: 0,
+            iv_load_policy: 3,
             start: 14,
-            end: 20
+            end: 19,
+            end: 25
         },
         events: {
-            onReady: initialize
+            onReady: initialize,
+            onReady: setPause
         }
     });
 }
-
+function setPause(){
+    setTimeout(Pause,7000);
+}
+function Pause() {
+    player.pauseVideo();
+}
 function initialize(){
 
     // Update the controls on load
@@ -35,9 +46,6 @@ function initialize(){
         updateTimerDisplay();
         updateProgressBar();
     }, 1000)
-
 }
-loadVideoById({'videoId': 'e395NwhfsU0',
-    'startSeconds': 14,
-    'endSeconds': 25,
-    'suggestedQuality': 'large'});
+
+
