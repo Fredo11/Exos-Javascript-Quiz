@@ -13,8 +13,21 @@ var Btn2 = document.getElementById('BTN2');
 var Btn3 = document.getElementById('BTN3');
 var Btn4 = document.getElementById('BTN4');
 
-var p1 = document.createElement('p');
-p1.innerHTML = LaQuestion + " : <i class=\"material-icons icovert\">mood</i>";
+for (var i = 0; i < 10; i++) {
+    var e = i + 1;
+    var Para = "P"+ e;
+    if (localStorage.getItem(Para) == null) {
+        var smiley = '<i class="material-icons">sentiment_neutral</i>';
+        localStorage.setItem(Para, smiley);
+    } else {
+        var smiley = localStorage.getItem(Para);
+    }
+    var nB = i + 1;
+    var Para1 = document.createElement('p');
+    Para1.innerHTML = nB + " : " + smiley;
+    document.getElementById("lesP").appendChild(Para1)
+}
+
 
 
 
@@ -55,15 +68,25 @@ p1.innerHTML = LaQuestion + " : <i class=\"material-icons icovert\">mood</i>";
                 end: courses.Questions[LaQuestion].End
             },
             events: {
-                onReady: initialize,
-                onReady: setPause
+                onReady: onPlayerReady,
+                onStateChange: onPlayerStateChange
             }
         });
     }
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
 
-    function setPause() {
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
         setTimeout(Pause, courses.Questions[LaQuestion].Pause);
+        done = true;
     }
+}
 
     function Pause() {
         player.pauseVideo();
@@ -85,19 +108,24 @@ p1.innerHTML = LaQuestion + " : <i class=\"material-icons icovert\">mood</i>";
             updateProgressBar();
         }, 1000)
     }
-
+function Rafraichir() {
+    document.location.reload(true);
+}
     Btn4.addEventListener("click", (reponse1) => {
         if (Btn4.id == courses.Questions[LaQuestion].Valid) {
             ++LaQuestion;
             localStorage.setItem("StLaQuestion", LaQuestion);
-            var p = document.getElementsByTagName('p')[LaQuestion - 1];
-            p.innerHTML = LaQuestion + " : <i class=\"material-icons icovert\">mood</i>";
-            document.location.reload(true);
+            var StP = "P" + LaQuestion;
+            localStorage.setItem(StP, "<i class=\"material-icons icovert\">mood</i>");
+            player.playVideo();
+            setInterval(Rafraichir, 7000);
         } else {
             ++LaQuestion;
             localStorage.setItem("StLaQuestion", LaQuestion);
-            var p = document.getElementsByTagName('p')[LaQuestion - 1];
-            p.innerHTML = LaQuestion + " : <i class=\"material-icons icorouge\">mood_bad</i>";
+            var StP = "P" + LaQuestion;
+            localStorage.setItem(StP, "<i class=\"material-icons icorouge\">mood_bad</i>");
             document.location.reload(true);
+            player.playVideo();
+            setInterval(Rafraichir, 7000);
         }
     });

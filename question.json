@@ -16,9 +16,9 @@
             "Reponse2":"Il rebondit et Pizza !!!!!!!!!!",
             "Reponse3":"Il réussit",
             "Reponse4":"Il ecrase les deux dernieres personnes!",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
+            "Start":"0",
+            "End":"8",
+            "Pause":"4000",
             "Valid": "BTN2"
           },
           {
