@@ -1,4 +1,4 @@
-"Questions": [
+{"Questions": [
           {
             "Question":"e395NwhfsU0",
             "Reponse1":"Il va se vautrer d'entrée...",
@@ -7,41 +7,37 @@
             "Reponse4":"Il va manger la palissade....",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN4"
+            "Pause":"7000"
           },
           {
             "Question":"bT0O_4hxqu8",
             "Reponse1":"Il se crashe en vol",
-            "Reponse2":"Il rebondit et Pizza !!!!!!!!!!",
+            "Reponse2":"Il ecrase les deux dernieres personnes",
             "Reponse3":"Il réussit",
-            "Reponse4":"Il ecrase les deux dernieres personnes!",
+            "Reponse4":"Il rebondit et Pizza !!!!!!!!!!",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN2"
+            "Pause":"7000"
           },
           {
             "Question":"A1iqei43WZA",
             "Reponse1":"Il se percute son collègue",
             "Reponse2":"Il percute une vache",
             "Reponse3":"Il percute une chèvre",
-            "Reponse4":"Il percute un randonneur",
+            "Reponse4":"Il percute un randonneur","Start":"14",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN3"
+            "Pause":"7000"
           },
           {
             "Question":"FShe2sLg9Fo",
-            "Reponse1":"Ils sautent du quad",
-            "Reponse2":"IL écrase son passager",
-            "Reponse3":"Il percute un chien",
+            "Reponse1":"IL perd son passager",
+            "Reponse2":"Il percute un chien",
+            "Reponse3":"Il fait un front flip",
             "Reponse4":"Il fait un back flip",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           },
           {
             "Question":"",
@@ -51,8 +47,7 @@
             "Reponse4":"",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           },
           {
             "Question":"",
@@ -62,8 +57,7 @@
             "Reponse4":"",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           },
           {
             "Question":"",
@@ -73,8 +67,7 @@
             "Reponse4":"",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           },
           {
             "Question":"",
@@ -84,8 +77,7 @@
             "Reponse4":"",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           },
           {
             "Question":"",
@@ -95,8 +87,7 @@
             "Reponse4":"",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           },
           {
             "Question":"",
@@ -106,8 +97,7 @@
             "Reponse4":"",
             "Start":"14",
             "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Pause":"7000"
           }
           ]
 }
