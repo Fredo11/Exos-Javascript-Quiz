@@ -9,7 +9,7 @@
             "End":"25",
             "Pause":"7000",
             "Fin": "5000",
-            "Valid": "BTN2"
+            "Valid": "BTN4"
           },
           {
             "Question":"bT0O_4hxqu8",
@@ -31,7 +31,7 @@
             "Reponse4":"Il percute un randonneur",
             "Start":"3",
             "End":"12",
-            "Pause":"7000",
+            "Pause":"5000",
             "Fin": "5000",
             "Valid": "BTN3"
           },
@@ -48,15 +48,15 @@
             "Valid": "BTN3"
           },
           {
-            "Question":"JANYxVn0O-M",
-            "Reponse1":"Il prend une water-stoppeuse",
-            "Reponse2":"Il arrive au bout ",
-            "Reponse3":"Il tombe",
-            "Reponse4":"Il se noie",
-            "Start":"70",
-            "End":"155",
-            "Pause":"60000",
-            "Fin": "5000",
+            "Question":"l5wCeA9VLHg",
+            "Reponse1":"Il réussit son braquage",
+            "Reponse2":"Un client intervient ",
+            "Reponse3":"Le vendeur sort un katana",
+            "Reponse4":"Le vendeur se fait pipi dessus",
+            "Start":"13",
+            "End":"26",
+            "Pause":"7000",
+            "Fin": "7000",
             "Valid": "BTN2"
           },
           {
@@ -68,7 +68,7 @@
             "Start":"0",
             "End":"15",
             "Pause":"5000",
-            "Fin": "5000",
+            "Fin": "10000",
             "Valid": "BTN4"
           },
           {
