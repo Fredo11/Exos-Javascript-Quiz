@@ -55,7 +55,7 @@
             "Reponse4":"Il se noie",
             "Start":"70",
             "End":"155",
-            "Pause":"6000",
+            "Pause":"60000",
             "Fin": "5000",
             "Valid": "BTN2"
           },
@@ -96,28 +96,28 @@
             "Valid": "BTN1"
           },
           {
-            "Question":"",
-            "Reponse1":"",
-            "Reponse2":"",
-            "Reponse3":"",
-            "Reponse4":"",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
+            "Question":"53x4NG2H5FQ",
+            "Reponse1":"Le cycliste evite la voiture",
+            "Reponse2":"Le cycliste percute la voiture",
+            "Reponse3":"Le cycliste fait un P.D.G",
+            "Reponse4":"Le cycliste freine et slide",
+            "Start":"36",
+            "End":"46",
+            "Pause":"42000",
             "Fin": "5000",
-            "Valid": "BTN2"
+            "Valid": "BTN3"
           },
           {
-            "Question":"",
-            "Reponse1":"",
-            "Reponse2":"",
-            "Reponse3":"",
-            "Reponse4":"",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
+            "Question":"kMhw5MFYU0s",
+            "Reponse1":"Il percute la caméra",
+            "Reponse2":"Faceplant sableux",
+            "Reponse3":"Faceplant mais récupère",
+            "Reponse4":"Rien",
+            "Start":"54",
+            "End":"84",
+            "Pause":"57000",
             "Fin": "5000",
-            "Valid": "BTN2"
+            "Valid": "BTN3"
           }
           ]
 }
