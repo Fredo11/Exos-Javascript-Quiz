@@ -2,6 +2,7 @@ if (localStorage.getItem("StLaQuestion") == null) {
     var LaQuestion = 0;
     localStorage.setItem("StLaQuestion", LaQuestion);
 } else if (localStorage.getItem("StLaQuestion") == 10) {
+    localStorage.clear();
     var LaQuestion = 0;
     localStorage.setItem("StLaQuestion", LaQuestion);
 } else {
@@ -25,7 +26,8 @@ for (var i = 0; i < 10; i++) {
     var nB = i + 1;
     var Para1 = document.createElement('p');
     Para1.innerHTML = nB + " : " + smiley;
-    document.getElementById("lesP").appendChild(Para1)
+    Para1.className = "valign-wrapper col s4 m3 l2";
+    document.getElementById("lesP").appendChild(Para1);
 }
 
 
@@ -111,21 +113,80 @@ function onPlayerStateChange(event) {
 function Rafraichir() {
     document.location.reload(true);
 }
-    Btn4.addEventListener("click", (reponse1) => {
-        if (Btn4.id == courses.Questions[LaQuestion].Valid) {
+
+    /*switch (Btn) {
+        case "Btn1":
+            Btn = Btn1;
+            break;
+        case "Btn2":
+            Btn = Btn2;
+            break;
+        case "Btn3":
+            Btn = Btn3;
+            break;
+        case "Btn4":
+            Btn = Btn4;
+            break;
+        default:
+            alert("Probleme");
+    }*//*
+for (var i = 0; i < 5; i++) {
+    var Btn = document.getElementsByTagName('a')[i];
+    Btn.addEventListener("click", () => {
+        console.log(this.id);
+        if (this.id == courses.Questions[LaQuestion].Valid) {
+            alert(this.id);
+            /*var Nb = LaQuestion + 1;
+            var p = document.getElementsByTagName('p')[LaQuestion];
+            p.innerHTML = Nb + " : <i class=\"material-icons icovert\">mood</i>";
             ++LaQuestion;
             localStorage.setItem("StLaQuestion", LaQuestion);
             var StP = "P" + LaQuestion;
             localStorage.setItem(StP, "<i class=\"material-icons icovert\">mood</i>");
             player.playVideo();
-            setInterval(Rafraichir, 7000);
+            setTimeout(Rafraichir, courses.Questions[LaQuestion].Fin);
         } else {
+            alert(this.id);
+            var Nb = LaQuestion + 1;
+            var p = document.getElementsByTagName('p')[LaQuestion];
+            p.innerHTML = Nb + " : <i class=\"material-icons icorouge\">mood_bad</i>";
             ++LaQuestion;
             localStorage.setItem("StLaQuestion", LaQuestion);
             var StP = "P" + LaQuestion;
             localStorage.setItem(StP, "<i class=\"material-icons icorouge\">mood_bad</i>");
-            document.location.reload(true);
             player.playVideo();
-            setInterval(Rafraichir, 7000);
+            setTimeout(Rafraichir, courses.Questions[LaQuestion].Fin);
         }
     });
+
+}*/
+
+
+for (var i = 0; i < 5; i++) {
+    var toto = document.getElementsByTagName('a')[i];
+    (function(i){
+        toto.addEventListener("click", function() {
+            if (this.id == courses.Questions[LaQuestion].Valid) {
+                var Nb = LaQuestion + 1;
+                var p = document.getElementsByTagName('p')[LaQuestion];
+                p.innerHTML = "<i class=\"material-icons icovert\">mood</i>";
+                ++LaQuestion;
+                localStorage.setItem("StLaQuestion", LaQuestion);
+                var StP = "P" + LaQuestion;
+                localStorage.setItem(StP, "<i class=\"material-icons icovert\">mood</i>");
+                player.playVideo();
+                setTimeout(Rafraichir, courses.Questions[LaQuestion].Fin);
+            } else {
+                var Nb = LaQuestion + 1;
+                var p = document.getElementsByTagName('p')[LaQuestion];
+                p.innerHTML = "<i class=\"material-icons icorouge\">mood_bad</i>";
+                ++LaQuestion;
+                localStorage.setItem("StLaQuestion", LaQuestion);
+                var StP = "P" + LaQuestion;
+                localStorage.setItem(StP, "<i class=\"material-icons icorouge\">mood_bad</i>");
+                player.playVideo();
+                setTimeout(Rafraichir, courses.Questions[LaQuestion].Fin);
+            }
+        });
+    })(i)
+}
