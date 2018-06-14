@@ -8,18 +8,20 @@
             "Start":"14",
             "End":"25",
             "Pause":"7000",
-            "Valid": "BTN4"
+            "Fin": "5000",
+            "Valid": "BTN2"
           },
           {
             "Question":"bT0O_4hxqu8",
             "Reponse1":"Il se crashe en vol",
-            "Reponse2":"Il rebondit et Pizza !!!!!!!!!!",
+            "Reponse2":"Il ecrase les deux dernieres personnes",
             "Reponse3":"Il réussit",
-            "Reponse4":"Il ecrase les deux dernieres personnes!",
+            "Reponse4":"Il rebondit et Pizza !!!!!!!!!!",
             "Start":"0",
             "End":"8",
             "Pause":"4000",
-            "Valid": "BTN2"
+            "Fin": "5000",
+            "Valid": "BTN4"
           },
           {
             "Question":"A1iqei43WZA",
@@ -27,20 +29,70 @@
             "Reponse2":"Il percute une vache",
             "Reponse3":"Il percute une chèvre",
             "Reponse4":"Il percute un randonneur",
-            "Start":"14",
-            "End":"25",
+            "Start":"3",
+            "End":"12",
             "Pause":"7000",
+            "Fin": "5000",
             "Valid": "BTN3"
           },
           {
             "Question":"FShe2sLg9Fo",
-            "Reponse1":"Ils sautent du quad",
-            "Reponse2":"IL écrase son passager",
-            "Reponse3":"Il percute un chien",
+            "Reponse1":"IL perd son passager",
+            "Reponse2":"Il percute un chien",
+            "Reponse3":"Il fait un front flip",
             "Reponse4":"Il fait un back flip",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
+            "Start":"0",
+            "End":"10",
+            "Pause":"2000",
+            "Fin": "5000",
+            "Valid": "BTN3"
+          },
+          {
+            "Question":"JANYxVn0O-M",
+            "Reponse1":"Il prend une water-stoppeuse",
+            "Reponse2":"Il arrive au bout ",
+            "Reponse3":"Il tombe",
+            "Reponse4":"Il se noie",
+            "Start":"70",
+            "End":"155",
+            "Pause":"6000",
+            "Fin": "5000",
+            "Valid": "BTN2"
+          },
+          {
+            "Question":"jzcKsI9px4A",
+            "Reponse1":"Il prend une voiture de face ",
+            "Reponse2":"Il se retourne",
+            "Reponse3":"Il percute son collègue",
+            "Reponse4":"Il se fait peur",
+            "Start":"0",
+            "End":"15",
+            "Pause":"5000",
+            "Fin": "5000",
+            "Valid": "BTN4"
+          },
+          {
+            "Question":"lPBZLSTGdic",
+            "Reponse1":"Il freine avant ",
+            "Reponse2":"Il traverse et chute",
+            "Reponse3":"Il sonde la pronfondeur du chenal",
+            "Reponse4":"Il traverse et se mouille",
+            "Start":"0",
+            "End":"7",
+            "Pause":"2000",
+            "Fin": "5000",
+            "Valid": "BTN4"
+          },
+          {
+            "Question":"kmacZXkfk6o",
+            "Reponse1":"Ils glissent et dansent ",
+            "Reponse2":"Ils percutent la voiture en face",
+            "Reponse3":"Ils glissent mais récupèrent",
+            "Reponse4":"Rien",
+            "Start":"4",
+            "End":"21",
+            "Pause":"5000",
+            "Fin": "5000",
             "Valid": "BTN1"
           },
           {
@@ -52,7 +104,8 @@
             "Start":"14",
             "End":"25",
             "Pause":"7000",
-            "Valid": "BTN1"
+            "Fin": "5000",
+            "Valid": "BTN2"
           },
           {
             "Question":"",
@@ -63,51 +116,8 @@
             "Start":"14",
             "End":"25",
             "Pause":"7000",
-            "Valid": "BTN1"
-          },
-          {
-            "Question":"",
-            "Reponse1":"",
-            "Reponse2":"",
-            "Reponse3":"",
-            "Reponse4":"",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
-          },
-          {
-            "Question":"",
-            "Reponse1":"",
-            "Reponse2":"",
-            "Reponse3":"",
-            "Reponse4":"",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
-          },
-          {
-            "Question":"",
-            "Reponse1":"",
-            "Reponse2":"",
-            "Reponse3":"",
-            "Reponse4":"",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
-          },
-          {
-            "Question":"",
-            "Reponse1":"",
-            "Reponse2":"",
-            "Reponse3":"",
-            "Reponse4":"",
-            "Start":"14",
-            "End":"25",
-            "Pause":"7000",
-            "Valid": "BTN1"
+            "Fin": "5000",
+            "Valid": "BTN2"
           }
           ]
 }
