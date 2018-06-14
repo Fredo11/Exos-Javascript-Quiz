@@ -103,7 +103,7 @@
             "Reponse4":"Le cycliste freine et slide",
             "Start":"36",
             "End":"46",
-            "Pause":"7000",
+            "Pause":"5500",
             "Fin": "5000",
             "Valid": "BTN3"
           },
@@ -113,10 +113,10 @@
             "Reponse2":"Faceplant sableux",
             "Reponse3":"Faceplant mais récupère",
             "Reponse4":"Rien",
-            "Start":"54",
-            "End":"63",
+            "Start":"54.5",
+            "End":"65",
             "Pause":"4000",
-            "Fin": "6000",
+            "Fin": "8000",
             "Valid": "BTN3"
           }
           ]
