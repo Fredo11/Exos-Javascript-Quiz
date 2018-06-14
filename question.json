@@ -114,8 +114,8 @@
             "Reponse3":"Faceplant mais récupère",
             "Reponse4":"Rien",
             "Start":"54",
-            "End":"84",
-            "Pause":"7000",
+            "End":"63",
+            "Pause":"4000",
             "Fin": "5000",
             "Valid": "BTN3"
           }
