@@ -60,15 +60,15 @@
             "Valid": "BTN3"
           },
           {
-            "Question":"jzcKsI9px4A",
-            "Reponse1":"Il prend une voiture de face ",
+            "Question":"8459H0QQ0jA",
+            "Reponse1":"Il percute son collègue",
             "Reponse2":"Il se retourne",
-            "Reponse3":"Il percute son collègue",
+            "Reponse3":"Il jump et se crash",
             "Reponse4":"Il se fait peur",
-            "Start":"0",
-            "End":"15",
+            "Start":"10",
+            "End":"19",
             "Pause":"5000",
-            "Fin": "10000",
+            "Fin": "5000",
             "Valid": "BTN4"
           },
           {
@@ -113,7 +113,7 @@
             "Reponse2":"Faceplant sableux",
             "Reponse3":"Faceplant mais récupère",
             "Reponse4":"Rien",
-            "Start":"54.5",
+            "Start":"54",
             "End":"65",
             "Pause":"4000",
             "Fin": "8000",
